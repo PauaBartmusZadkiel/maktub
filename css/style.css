@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
+/*-------------RESET-------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau', sans-serif;
+    ;
+}
+section h3{
+    color: #8338ec;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+/*-------------HEADER-----------*/
+header nav{
+    background-color:#8338ec;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+main{
+    margin-top: 0;
+}
+.maktub{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+}
+.titulo-pagina{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.titulo-pagina:hover{
+    color: rgb(194, 76, 248);
+}
+.contenedor-barra{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo-pagina{
+    margin: 20px;
+}
+/*-------------MAIN-------------*/
+/*----------INDEX--------*/
+/*--Hero--*/
+.hero{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.hero img{
+    margin: 20px;
+    width: 510px;
+    height: 510px;
+}
+.hero p{
+    color: #4585f5;
+    font-size: 28px;
+    text-align: justify;
+}
+/*--PilaresdeTrabajo--*/
+.pilares-de-trabajo{
+    background-color: #c4d7f88c;
+}
+.pilares-de-trabajo .pilares-de-trabajo-contenedor{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.pilares-de-trabajo-card{
+    width: 250px;
+    height: 400px;
+    border: 1px;
+    text-align: center;
+    margin: 20px;
+}
+.pilares-de-trabajo div img{
+    width: 100%;
+    height: 270px;
+}
+.pilares-de-trabajo h1{
+    color:#8338ec;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+}
+.pilares-de-trabajo div h2{
+    color: #f20089;
+    font-size: 25px;
+    font-weight: 600;
+}
+.pilares-de-trabajo div p{
+    color: #2d36b6;
+    font-size: 22px;
+    font-style: italic;
+}
+span{
+    font-weight: bold;
+}
+/*--CaballeroArmadura--*/
+.caballero h3{
+    color:#8338ec;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+}
+.caballero-armadura-oxidada{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-around;
+}
+.caballero-armadura-oxidada p{
+    color:  #5591f5;
+    font-size: 25px;
+    font-style: italic;
+}
+.caballero-armadura-oxidada img{
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+.video-caballero{
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+/*-----QUE-HACEMOS-----*/
+.que-hacemos-sesiones{
+    background-image: url("../img/fondo.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.que-hacemos-sesiones div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+.que-hacemos-sesiones h1{
+    color: #2d36b6;
+    font-size: 42px;
+    text-align: center;
+    margin: 36px;
+    font-weight: 700;
+}
+.que-hacemos-sesiones p{
+    color: #5591f5;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 550;
+}
+.que-hacemos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.que-hacemos div{
+    width: 310px;
+    height: 370px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px rgb(147, 147, 212);
+    border-radius: 7px;
+}
+.que-hacemos div img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.que-hacemos div p{
+    color: #1453c0;
+    font-size: 20px;
+    text-align: center;
+}
+/*-----Principito-----*/
+.principito-frase{
+    background-color: #c4d7f88c;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#8338ec;
+    font-size: 30px;
+    font-weight:600;
+    font-style: italic;
+}
+/*-----QUIENES-SOMOS-----*/
+.grid-contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 67px 700px 338px; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+.encabezado{
+    grid-area:header;
+}
+.contenido{
+    grid-area:main;
+}
+.pie{
+    grid-area:footer;
+}
+.quienes-somos{
+    display: flex;
+    align-items: center;
+}
+.quienes-somos-contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.quienes-somos h1{
+    color: #2d36b6;
+    font-size: 35px;
+    margin: 20px;
+    font-weight: 700;
+}
+.quienes-somos p{
+    color: #5591f5;
+    font-size: 28px;
+    margin: 20px;
+}
+.quienes-somos img{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+}
+.mision{
+    background-color: #c4d7f88c;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#8338ec;
+    font-size: 30px;
+    font-weight:600;
+    text-align: center;
+}
+/*-----SESIONES-----*/
+.sesiones{
+    display: flex;
+    justify-content: space-around;
+}
+.sesiones div{
+    width: 450px;
+    height: 600px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.sesiones div img{
+    width: 200px;
+    height: 200px;
+}
+.sesiones div h2{
+    color:#f20089;
+    font-size: 28px;
+    padding: 20px;
+}
+.sesiones div p{
+    font-size: 25px;
+    color:#2d36b6;
+    padding:20px;
+}
+.preguntas-frecuentes{
+    background-color: #c4d7f88c;
+    width: 100%;
+    height: 710px;
+}
+.accordion-item h3 button{
+    color:   #2d36b6;
+    font-size: 25px;
+    font-weight: 500;
+}
+.accordion-body p{
+    font-size: 20px;
+    color:#5591f5;
+}
+/*-----CONTACTO-----*/
+/*-----Datos de contacto----*/
+.contactanos h1{
+    color: #2d36b6;
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.ubicacion-contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+.ubicacion{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow:3px 3px 4px rgb(147, 147, 212);
+}
+.ubicacion img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.ubicacion p{
+    color: #5591f5;
+    font-size: 23px;
+    font-weight: 500;
+}
+/*-----Fromulario----*/
+.formulario{
+    background-color: #c4d7f88c;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-card{
+    display: flex;
+}
+.formulario-card div{
+    margin: 10px;
+}
+.mapa-frase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mapa-frase iframe{
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow:3px 3px 4px rgb(147, 147, 212);
+}
+.frase-flor-loto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frase-flor-loto p{
+    color: #5591f5;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+}
+.frase-flor-loto img{
+    width: 100px;
+    height: 100px;
+}
+/*------------FOOTER-----------*/
+footer{
+    background-color:#8338ec;
+    display: flex;
+    justify-content: space-around;
+}
+footer div h4{
+    color: white;
+    font-weight: 900px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: start;
+}
+.contacto .contacto-contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.contacto{
+    width: 300px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.contacto img{
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+}
+.contacto p{
+    color: white;
+    font-size: 23px;
+}
+.redes a{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+/*-----MEDIA QUERIES-----*/
+/*---Página CUE HACEMOS---*/
+@media screen and (max-width:985px){
+    .que-hacemos div{
+        width: 210px;
+        height: 300px;
+        margin: 15px;
+        padding: 15px;
+    }
+    .que-hacemos div img{
+        width: 100%;
+        height: 150px;
+    }
+    .que-hacemos div p{
+        font-size: 19px;
+    }
+    .que-hacemos-sesiones h1{
+        font-size: 38px;
+    }
+    .que-hacemos-sesiones p{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:691px){
+    .que-hacemos{
+        flex-direction: column;
+    }
+    .que-hacemos div{
+        width: 660px;
+        height: 245px;
+        display: flex;
+        align-items: center;
+    }
+    .que-hacemos div img{
+        width: 240px;
+        height: 215px;
+        margin: 8px;
+    }
+    .que-hacemos div p{
+        font-size: 23px;
+        margin: 15px;
+    }
+    .principito-frase{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:669px){
+    .que-hacemos div{
+        width: 630px;
+        height: 240px;
+    }
+    .principito-frase{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:641px){
+    .que-hacemos div{
+        width: 600px;
+        height: 200px;
+    }
+    .que-hacemos div img{
+        width: 230px;
+        height: 180px;
+        margin: 8px;
+    }
+    .que-hacemos-sesiones h1{
+        font-size: 38px;
+    }
+    .que-hacemos-sesiones p{
+        font-size: 28px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes{
+        margin: 15px;
+    }
+    footer div h4{
+        text-align: center;
+    }
+}
+@media screen and (max-width:577px){
+    .que-hacemos{
+        align-items: center;
+    }
+    .que-hacemos div{
+        flex-direction: column;
+        width: 280px;
+        height: 320px;
+    }
+    .que-hacemos div img{
+        width: 230px;
+        height: 200px;
+        margin: 8px;
+    }
+    .que-hacemos-sesiones h1{
+        font-size: 29px;
+    }
+    .que-hacemos-sesiones p{
+        font-size: 24px;
+    }
+    .que-hacemos div p{
+        font-size: 19px;
+    }
+}
+/*--Página INDEX---*/
+@media screen and (max-width:937px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero img{
+        margin: 10px;
+        width: 460px;
+        height: 460px;
+    }
+    .hero p{
+        color: #4585f5;
+        font-size: 30px;
+        text-align: center;
+    }
+    .pilares-de-trabajo div img{
+        width: 220px;
+        height: 220px;
+        }
+    .caballero-armadura-oxidada p{
+        font-size: 30px;
+    }
+}
+/*--Página INDEX---*/
+@media screen and (max-width: 713px){
+    .hero {
+        flex-direction: column;
+    }
+    .hero img{
+        margin: 10px;
+        width: 310px;
+        height: 310px;
+    }
+    .hero p{
+        color: #4585f5;
+        font-size: 26px;
+        text-align: center;
+    }
+    .pilares-de-trabajo .pilares-de-trabajo-contenedor{
+    flex-direction: column;
+    align-items: center;
+    }
+    .pilares-de-trabajo-card{
+    width: 250px;
+    height: 400px;
+    }
+    .pilares-de-trabajo div img{
+    width: 220;
+    height: 250px;
+    }
+    .pilares-de-trabajo h1{
+    font-size: 30px;
+    }
+    .caballero-armadura-oxidada{
+        flex-direction:column-reverse;
+    }
+    .caballero-armadura-oxidada p{
+        font-size: 26px;
+    }
+    .caballero-armadura-oxidada img{
+        width: 100px;
+        height: 100px;
+    }
+    .caballero h3{
+    font-size: 30px;
+    }
+}
