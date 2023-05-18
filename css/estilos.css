@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ysabeau', sans-serif; }
+
+section h3 {
+  color: #8338ec;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600; }
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3; }
+  header nav {
+    background-color: #ffffff;
+    opacity: 0.9;
+    border-bottom: 2px solid #700ACF; }
+    header nav .contenedor-barra {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header nav .contenedor-barra .maktub {
+        color: #700ACF;
+        text-decoration: none;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 700;
+        margin-left: 25px; }
+      header nav .contenedor-barra div ul li .titulo-pagina {
+        color: #700ACF;
+        text-decoration: none;
+        font-size: 22px;
+        margin: 20px;
+        font-weight: 500; }
+        header nav .contenedor-barra div ul li .titulo-pagina:hover {
+          color: #c24cf8; }
+
+main .hero {
+  display: flex;
+  align-items: center;
+  margin: 15px; }
+  main .hero img {
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+    opacity: 0.9; }
+  main .hero p {
+    color: #4585f5;
+    font-size: 27px;
+    text-align: justify; }
+
+main .pilares-de-trabajo {
+  background-color: #c4d7f88c; }
+  main .pilares-de-trabajo h1 {
+    color: #700ACF;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 30px; }
+  main .pilares-de-trabajo .pilares-de-trabajo-contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px; }
+    main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card {
+      width: 340px;
+      height: 460px;
+      text-align: center;
+      margin-bottom: 40px;
+      background-color: #700ACF;
+      opacity: 0.8;
+      border-radius: 5px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px; }
+      main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card img {
+        width: 250px;
+        height: 260px;
+        padding: 10px; }
+      main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card h2 {
+        color: #fcd9ed;
+        font-size: 27px;
+        font-weight: 600;
+        margin: 19px; }
+      main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card .linea {
+        border-top: 1px solid white;
+        height: 2px;
+        max-width: 200px;
+        padding-bottom: 9px;
+        margin: 20px auto 0 auto; }
+      main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card p {
+        color: white;
+        font-size: 22px;
+        font-style: italic; }
+        main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card p span {
+          font-weight: bold; }
+
+main .caballero h3 {
+  color: #700ACF;
+  font-size: 35px;
+  text-align: center;
+  margin: 30px;
+  font-weight: 600; }
+
+main .caballero .linea-aprendizaje {
+  border-top: 1px solid #690fb3;
+  height: 2px;
+  max-width: 800px;
+  padding-bottom: 9px;
+  margin: 20px auto 0 auto; }
+
+main .caballero .caballero-armadura-oxidada {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 10px; }
+  main .caballero .caballero-armadura-oxidada p {
+    color: #4585f5;
+    font-size: 27px;
+    font-style: italic; }
+  main .caballero .caballero-armadura-oxidada img {
+    width: 90px;
+    height: 90px;
+    margin: 10px; }
+
+main .video-caballero {
+  display: flex;
+  justify-content: center;
+  margin: 70px; }
+
+.que-hacemos-sesiones {
+  background-color: #700ACF;
+  opacity: 0.7;
+  width: 100%;
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .que-hacemos-sesiones div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    align-items: center; }
+    .que-hacemos-sesiones div h1 {
+      color: white;
+      font-size: 42px;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 15px; }
+    .que-hacemos-sesiones div .linea-hacemos-sesiones {
+      border-top: 2px solid white;
+      height: 2px;
+      max-width: 400px;
+      padding-bottom: 9px;
+      margin: 20px auto 0 auto; }
+    .que-hacemos-sesiones div p {
+      color: white;
+      font-size: 35px;
+      text-align: center;
+      font-weight: 550;
+      margin-top: 15px; }
+
+.que-hacemos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  .que-hacemos div {
+    width: 310px;
+    height: 370px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px #9393d4; }
+    .que-hacemos div img {
+      width: 100%;
+      height: 260px; }
+    .que-hacemos div p {
+      color: #1453c0;
+      font-size: 20px;
+      text-align: center; }
+
+.principito-frase {
+  background-color: #c4d7f88c;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #700ACF;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic; }
+
+.quienes-somos {
+  display: flex; }
+  .quienes-somos img {
+    width: 300px;
+    height: 320px;
+    margin: 25px;
+    margin-top: 40px;
+    border-radius: 3px; }
+  .quienes-somos .quienes-somos-contenido {
+    margin: 15px; }
+    .quienes-somos .quienes-somos-contenido h1 {
+      color: #700ACF;
+      font-size: 35px;
+      margin: 20px;
+      font-weight: 700; }
+    .quienes-somos .quienes-somos-contenido p {
+      color: #4585f5;
+      font-size: 27px;
+      margin: 30px; }
+
+.amor {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+  .amor img {
+    width: 110px;
+    height: 110px; }
+
+.mision {
+  background-color: #c4d7f88c;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8338ec;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center; }
+
+.valores h2 {
+  color: #700ACF;
+  font-size: 35px;
+  margin-top: 30px;
+  font-weight: 700;
+  text-align: center; }
+
+.valores div {
+  border-top: 2px solid #690fb3;
+  height: 2px;
+  max-width: 400px;
+  padding-bottom: 9px;
+  margin: 20px auto 0 auto; }
+
+.grid-galeria {
+  margin-bottom: 30px;
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .grid-galeria .grid-item {
+    position: relative; }
+    .grid-galeria .grid-item img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      object-fit: cover;
+      border-radius: 3px;
+      box-shadow: 10px 10px 23px -11px rgba(0, 0, 0, 0.85);
+      -webkit-box-shadow: 10px 10px 23px -11px rgba(0, 0, 0, 0.85);
+      -moz-box-shadow: 10px 10px 23px -11px rgba(0, 0, 0, 0.85); }
+    .grid-galeria .grid-item p {
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.582);
+      color: white;
+      position: absolute;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px; }
+
+.sesiones {
+  display: flex;
+  justify-content: space-around; }
+  .sesiones div {
+    width: 450px;
+    height: 730px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 4px;
+    color: #700ACF;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px; }
+    .sesiones div img {
+      width: 200px;
+      height: 200px; }
+    .sesiones div h2 {
+      color: #f20089;
+      font-size: 30px;
+      padding: 20px;
+      font-weight: 600; }
+    .sesiones div p {
+      font-size: 25px;
+      color: #2d36b6;
+      padding: 20px;
+      text-align: justify;
+      background-color: #c4d7f88c;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px; }
+
+.preguntas-frecuentes {
+  background-color: #c4d7f88c;
+  width: 100%;
+  height: 710px; }
+  .preguntas-frecuentes h3 {
+    color: #700ACF;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 600; }
+  .preguntas-frecuentes .accordion-item h3 button {
+    color: #2d36b6;
+    font-size: 25px;
+    font-weight: 500; }
+  .preguntas-frecuentes div .accordion-body p {
+    font-size: 20px;
+    color: #5591f5; }
+
+.contactanos h1 {
+  color: #700ACF;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700; }
+
+.contactanos div {
+  border-top: 2px solid #700ACF;
+  height: 2px;
+  max-width: 400px;
+  padding-bottom: 9px;
+  margin: 15px auto 0 auto; }
+
+.ubicacion-contenedor {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  align-items: center; }
+  .ubicacion-contenedor .ubicacion {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 3px 3px 4px #9393d4; }
+    .ubicacion-contenedor .ubicacion img {
+      width: 40px;
+      height: 40px;
+      margin: 10px; }
+    .ubicacion-contenedor .ubicacion p {
+      color: #5591f5;
+      font-size: 23px;
+      font-weight: 500; }
+
+.formulario {
+  background-color: #c4d7f88c; }
+  .formulario form .formulario-contenedor .formulario-card {
+    display: flex;
+    justify-content: center; }
+    .formulario form .formulario-contenedor .formulario-card div .form-label {
+      font-weight: 700;
+      font-size: 23px;
+      color: #8338ec; }
+  .formulario form .botones-formulario {
+    margin: 7px;
+    display: flex;
+    justify-content: center; }
+    .formulario form .botones-formulario input {
+      margin: 5px; }
+
+.mapa-frase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .mapa-frase iframe {
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 3px 3px 4px #9393d4; }
+  .mapa-frase .frase-flor-loto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mapa-frase .frase-flor-loto p {
+      color: #5591f5;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      font-style: italic; }
+    .mapa-frase .frase-flor-loto img {
+      width: 100px;
+      height: 100px; }
+
+footer {
+  background-color: #700ACF;
+  border-top: 4px solid #fde0f7;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around; }
+  footer .contacto-contenedor {
+    display: flex;
+    flex-direction: column; }
+    footer .contacto-contenedor h4 {
+      color: white;
+      font-weight: 900px;
+      font-size: 23px;
+      text-align: center; }
+    footer .contacto-contenedor .contenedor {
+      display: flex;
+      align-items: center; }
+      footer .contacto-contenedor .contenedor .contacto {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 75px;
+        align-items: center; }
+        footer .contacto-contenedor .contenedor .contacto img {
+          width: 50px;
+          height: 50px;
+          margin: 15px; }
+        footer .contacto-contenedor .contenedor .contacto p {
+          color: white;
+          font-size: 19px; }

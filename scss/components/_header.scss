@@ -1,0 +1,41 @@
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    nav{
+        background-color:#ffffff;
+        opacity: 0.9;
+        border-bottom: 2px solid #700ACF;
+        .contenedor-barra{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .maktub{
+                color:#700ACF;
+                text-decoration: none;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 700;
+                margin-left: 25px;
+            }
+            div{
+                ul{
+                    li{
+                        .titulo-pagina{
+                            color:#700ACF;
+                            text-decoration: none;
+                            font-size: 22px;
+                            margin: 20px;
+                            font-weight: 500;
+                            &:hover{
+                                color: rgb(194, 76, 248);  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -37,6 +37,7 @@ main{
     color: white;
     text-decoration: none;
     font-size: 22px;
+    margin: 20px;
 }
 .titulo-pagina:hover{
     color: rgb(194, 76, 248);
@@ -46,9 +47,6 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.titulo-pagina{
-    margin: 20px;
 }
 /*-------------MAIN-------------*/
 /*----------INDEX--------*/
@@ -210,34 +208,11 @@ span{
     font-style: italic;
 }
 /*-----QUIENES-SOMOS-----*/
-.grid-contenedor{
-    width: 100%;
-    display: grid;
-    grid-template-rows: 67px 700px 338px; 
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-.encabezado{
-    grid-area:header;
-}
-.contenido{
-    grid-area:main;
-}
-.pie{
-    grid-area:footer;
+.quienes-somos-contenido{
+    margin: 15px;
 }
 .quienes-somos{
     display: flex;
-    align-items: center;
-}
-.quienes-somos-contenido{
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
 }
 .quienes-somos h1{
     color: #2d36b6;
@@ -266,6 +241,31 @@ span{
     font-size: 30px;
     font-weight:600;
     text-align: center;
+}
+.grid-galeria{
+    width: 100%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 10px 10px 5px -4px rgba(33,33,33,0.75);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(33,33,33,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(33,33,33,0.75);
+}
+.img-3{
+    grid-row:span 2;
+}
+.grid-item1{
+    grid-column:span 2;
+    grid-row:span 2;
+
 }
 /*-----SESIONES-----*/
 .sesiones{
@@ -602,3 +602,4 @@ footer div h4{
     font-size: 30px;
     }
 }
+/*---Página QUE HACEMOS---*/
