@@ -4,8 +4,6 @@ footer{
     opacity: 0.7;
     @include flex (flex, space-around);
     .contacto-contenedor{
-        @extend %flexcenter;
-        flex-direction:column;
         h4{
         color: nth($colores,7);
         font-weight: 900px;
@@ -13,9 +11,10 @@ footer{
         text-align: center;
         }
         .contenedor{
-            @extend %flexcenter;
+            display: flex;
             .contacto{
-                @extend %flexcenter;
+                align-items: center;
+                display: flex;
                 flex-direction: row;
                 width: 300px;
                 height: 75px;

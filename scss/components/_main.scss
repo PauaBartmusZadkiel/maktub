@@ -1,7 +1,8 @@
 main{
     margin-top: 0;
     .hero{
-        @extend %flexcenter;
+        @include flex (flex, center);
+        align-items: center;
         margin: 15px;
         img{
             margin: 20px;
@@ -90,7 +91,8 @@ main{
             margin: 20px auto 0 auto;
         }
         .caballero-armadura-oxidada{
-            @extend %flexcenter;
+            @include flex (flex, center);
+            align-items: center;
             flex-direction: column-reverse;
             margin: 10px;
             p{
@@ -106,7 +108,8 @@ main{
             }
         }
         .video-caballero{
-            @extend %flexcenter;
+            @include flex (flex, center);
+            align-items: center;
             margin: 30px;
         }
     }
@@ -138,7 +141,8 @@ main{
                 }
             }
         div{
-            @extend %flexcenter;
+            @include flex (flex, center);
+            align-items: center;
             flex-direction: column;
             width: 100%;
             height: 300px;
@@ -192,7 +196,8 @@ main{
         width: 100%;
         height: 400px;
         text-align: center;
-        @extend %flexcenter;
+        @include flex (flex, center);
+        align-items: center;
         flex-direction: column;
         color:nth($colores,2);
         font-size: 30px;
@@ -224,7 +229,8 @@ main{
     }
 }
 .amor{
-    @extend %flexcenter;
+    @include flex (flex, center);
+    align-items: center;
     margin: 20px;
     img{
         width: 110px;
@@ -235,7 +241,8 @@ main{
     background-color: nth($colores,4);
     width: 100%;
     height: 300px;
-    @extend %flexcenter;
+    @include flex (flex, center);
+    align-items: center;
     color:nth($colores,2);
     font-size: 30px;
     font-weight:nth($fontweight,2);
@@ -337,7 +344,8 @@ main{
     }
     div{
         width: 100%;
-        @extend %flexcenter;
+        @include flex (flex, center);
+        align-items: center;;
         flex-direction: column;
         .accordion-item{
             h3{
@@ -375,7 +383,8 @@ main{
     }
 }
 .ubicacion-contenedor{
-    @extend %flexcenter;
+    @include flex (flex, center);
+    align-items: center;
     width: 100%;
     height: 300px;
     .ubicacion{
@@ -402,7 +411,8 @@ main{
     form{
         .formulario-contenedor{
             .formulario-card{
-                @extend %flexcenter;
+                @include flex (flex, center);
+                align-items: center;
                 div{
                     .form-label{
                         font-weight:nth($fontweight,3);
@@ -414,7 +424,8 @@ main{
         }
         .botones-formulario{
             margin: 7px;
-            @extend %flexcenter;
+            @include flex (flex, center);
+            align-items: center;
             input{
                 margin: 5px;
             }
@@ -430,7 +441,8 @@ main{
         box-shadow:3px 3px 4px nth($colores,3);
     }
     .frase-flor-loto{
-        @extend %flexcenter;
+        @include flex (flex, center);
+        align-items: center;
         flex-direction: column;
         p{
             color: nth($colores,8);

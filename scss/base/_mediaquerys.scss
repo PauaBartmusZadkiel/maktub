@@ -46,14 +46,14 @@
             }
         }
     }
-    footer {
-        .contacto-contenedor {
-            .contenedor {
-                flex-direction: column;
+    footer{
+        .contacto-contenedor{
+            .contenedor{
+            flex-direction: column;
             }
         }
     }
-}
+
 @media screen and (max-width: 701px) {
     header {
         nav {
@@ -241,14 +241,6 @@
             max-width: 300px;
         }
     }
-    footer {
-        .contacto-contenedor {
-            .contenedor {
-                flex-direction: column;
-            }
-        }
-    } 
-}
 @media screen and (max-width:713px){
     .quienes-somos{
         flex-direction: column;
@@ -265,8 +257,6 @@
 @media screen and (max-width:531px){
     .grid-galeria{
         grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-        margin-left: 50px;
         .grid-item{
             img{
                 width: 80%;
@@ -336,6 +326,14 @@
         }
     }
 }
+@media screen and (max-width:447px){
+    .sesiones{
+        div{
+            width: 400px;
+            height: 600px;
+        }
+    }
+}
 /*---MQ-CONTACTO--*/
 @media screen and (max-width:863px){
     .contactanos{
@@ -391,6 +389,4 @@
         }
     }
 }
-
-
-
+}}
