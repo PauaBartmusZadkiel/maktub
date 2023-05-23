@@ -1,0 +1,32 @@
+$colores:
+rgba(0, 0, 0, 0.582),
+#700ACF,
+rgba(201, 100, 248, 0.349),
+rgba(165, 165, 219, 0.575),
+#8338ec,
+#fde0f7,
+white,
+#4585f5,
+#1453c0,
+#f20089;
+
+$fontweight:
+550,
+600,
+700,
+500,
+400;
+
+%flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex ($flex,$justify){
+    display: $flex;
+    justify-content:$justify;
+}
+
+
+

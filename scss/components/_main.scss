@@ -1,7 +1,7 @@
 main{
+    margin-top: 0;
     .hero{
-        display: flex;
-        align-items: center;
+        @extend %flexcenter;
         margin: 15px;
         img{
             margin: 20px;
@@ -10,54 +10,61 @@ main{
             opacity: 0.9;
         }
         p{
-            color: #4585f5;
+            color: nth($colores,8);
             font-size: 27px;
             text-align: justify;
         }
     }
     .pilares-de-trabajo{
-        background-color: #c4d7f88c;
+        background-color: nth($colores,4);
         h1{
-            color:#700ACF;
+            color:nth($colores,2);
             font-size: 35px;
             text-align:center;
-            font-weight: 600;
+            font-weight: nth($fontweight,2);
             padding-top: 30px;
         }
         .pilares-de-trabajo-contenedor{
-            display: flex;
-            justify-content: space-around;
+            @include flex (flex, space-around);
             margin: 50px;
             .pilares-de-trabajo-card{
-                width: 340px;
+                width: 100%;
                 height: 460px;
                 text-align: center;
                 margin-bottom: 40px;
-                background-color:#700ACF;
+                background-color:nth($colores,2);
                 opacity: 0.8;
                 border-radius: 5px;
                 border-top-right-radius:  50px;
                 border-bottom-left-radius: 50px;
+                margin: 20px;
+                transition-property: width height;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                &:hover{
+                    width: 109%;
+                    height: 480px;
+                }
                 img{
                     width: 250px;
                     height: 260px;
                     padding:  10px;
                 }
                 h2{
-                    color: #fcd9ed;
+                    color: nth($colores,6);
                     font-size: 27px;
-                    font-weight: 600;
+                    font-weight: nth($fontweight,2);
                     margin: 19px;
                 }
                 .linea{
-                    border-top: 1px solid rgb(255, 255, 255);
+                    border-top: 1px solid nth($colores,7);
                     height: 2px;
                     max-width: 200px;
                     padding-bottom: 9px;
                     margin: 20px auto 0 auto;
                 }
                 p{
-                    color: white;
+                    color: nth($colores,7);
                     font-size: 22px;
                     font-style: italic;    
                     span{
@@ -69,26 +76,25 @@ main{
     }
     .caballero{
         h3{
-            color:#700ACF;
+            color:nth($colores,2);
             font-size: 35px;
             text-align: center;
             margin: 30px;
-            font-weight: 600;
+            font-weight: nth($fontweight,2);
         }
         .linea-aprendizaje{
-            border-top: 1px solid rgb(105, 15, 179);
+            border-top: 1px solid nth($colores,2);
             height: 2px;
             max-width: 800px;
             padding-bottom: 9px;
             margin: 20px auto 0 auto;
         }
         .caballero-armadura-oxidada{
-            display: flex;
+            @extend %flexcenter;
             flex-direction: column-reverse;
-            align-items: center;
             margin: 10px;
             p{
-                color:  #4585f5;
+                color: nth($colores,8);
                 font-size: 27px;
                 font-style: italic;
             }
@@ -100,13 +106,12 @@ main{
             }
         }
         .video-caballero{
-            display: flex;
-            justify-content: center;
-            margin: 70px;
+            @extend %flexcenter;
+            margin: 30px;
         }
     }
     .que-hacemos-sesiones{
-        background-color: #700ACF;
+        background-color: nth($colores,2);
         opacity: 0.7;
         width: 100%;
         height: 340px;
@@ -117,70 +122,81 @@ main{
         text-align: center;
         margin-top:20px;
         margin-bottom:30px;
+        animation-name: slidein ;
+        animation-duration: 3s;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        @keyframes slidein {
+            from{
+                margin-left: 100%;
+                width: 300%;
+                }
+            to {
+                margin-left: 0;
+                width: 100%;
+                }
+            }
         div{
-            display: flex;
+            @extend %flexcenter;
             flex-direction: column;
-            justify-content: center;
             width: 100%;
             height: 300px;
-            align-items: center;
             h1{
-                color: white;
+                color: nth($colores,7);
                 font-size: 42px;
                 text-align: center;
-                font-weight: 700;
+                font-weight: nth($fontweight,3);
                 margin-bottom: 10px;
                 margin-top: 15px;
             }
             .linea-hacemos-sesiones{
-                border-top: 2px solid white;
+                border-top: 2px solid nth($colores,7);
                 height: 2px;
                 max-width: 400px;
                 padding-bottom: 9px;
                 margin: 20px auto 0 auto;
             }
             p{
-                color: white;
+                color: nth($colores,7);
                 font-size: 35px;
                 text-align: center;
-                font-weight: 550;
+                font-weight: nth($fontweight,1);
                 margin-top: 15px;
             }
         }
     }
     .que-hacemos{
-        display: flex;
+        @include flex (flex, space-around);
         width: 100%;
-        justify-content: space-around;
         div{
             width: 310px;
             height: 370px;
             text-align: center;
             margin: 20px;
             padding: 20px;
-            box-shadow: 0px 0px 5px rgb(147, 147, 212);
+            box-shadow: 0px 0px 5px nth($colores,3);
             img{
                 width: 100%;
                 height: 260px;
             }
             p{
-                color: #1453c0;
+                color: nth($colores,9);
                 font-size: 20px;
                 text-align: center;
             }
         }
     }
     .principito-frase{
-        background-color: #c4d7f88c;
+        background-color: nth($colores,4);
         width: 100%;
         height: 400px;
         text-align: center;
-        display: flex;
+        @extend %flexcenter;
         flex-direction: column;
-        justify-content: center;
-        color:#700ACF;
+        color:nth($colores,2);
         font-size: 30px;
-        font-weight:600;
+        font-weight:nth($fontweight,2);
         font-style: italic;
     }
 .quienes-somos{
@@ -195,21 +211,20 @@ main{
     .quienes-somos-contenido{
         margin: 15px;
         h1{
-            color: #700ACF;
+            color: nth($colores,2);
             font-size: 35px;
             margin: 20px;
-            font-weight: 700;
+            font-weight: nth($fontweight,3);
         }
         p{
-            color: #4585f5;
+            color: nth($colores,8);
             font-size: 27px;
             margin: 30px;
         }
     }
 }
 .amor{
-    display: flex;
-    justify-content: center;
+    @extend %flexcenter;
     margin: 20px;
     img{
         width: 110px;
@@ -217,27 +232,25 @@ main{
     }
 }
 .mision{
-    background-color: #c4d7f88c;
+    background-color: nth($colores,4);
     width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#8338ec;
+    @extend %flexcenter;
+    color:nth($colores,2);
     font-size: 30px;
-    font-weight:600;
+    font-weight:nth($fontweight,2);
     text-align: center;
 }
 .valores{
     h2{
-        color: #700ACF;
+        color: nth($colores,2);
         font-size: 35px;
         margin-top: 30px;
-        font-weight: 700;
+        font-weight: nth($fontweight,3);
         text-align: center;
     }
     div{
-        border-top: 2px solid rgb(105, 15, 179);
+        border-top: 2px solid nth($colores,2);
         height: 2px;
         max-width: 400px;
         padding-bottom: 9px;
@@ -254,31 +267,34 @@ main{
     gap: 15px;
     .grid-item{
         position: relative;
+        transition: 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
         img{
             width: 100%;
             height: 100%;
             opacity: 0.9;
             object-fit: cover;
             border-radius: 3px;
-            box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.85);
-            -webkit-box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.85);
-            -moz-box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.85);
+            box-shadow: 10px 10px 23px -11px nth($colores,1);
+            -webkit-box-shadow: 10px 10px 23px -11px nth($colores,1);
+            -moz-box-shadow: 10px 10px 23px -11px nth($colores,1);
         }
         p{
             bottom: 0;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.582);
-            color: white;
+            background-color:nth($colores,1);
+            color: nth($colores,7);
             position: absolute;
             text-align: center;
-            font-weight: 600;
+            font-weight: nth($fontweight,2);
             font-size: 20px;
         }
     }
 }
 .sesiones{
-    display: flex;
-    justify-content: space-around;
+    @include flex (flex, space-around);
     div{
         width: 450px;
         height: 730px;
@@ -287,7 +303,7 @@ main{
         text-align: center;
         border: 3px solid;
         border-radius: 4px;
-        color: #700ACF;
+        color: nth($colores,2);
         border-top-right-radius:  50px;
         border-bottom-left-radius: 50px;
         img{
@@ -298,58 +314,60 @@ main{
             color:#f20089;
             font-size: 30px;
             padding: 20px;
-            font-weight: 600;
+            font-weight: nth($fontweight,2);
         }
         p{
             font-size: 25px;
-            color:#2d36b6;
+            color:nth($colores,9);
             padding:20px;
             text-align: justify;
-            background-color: #c4d7f88c;
             border-top-right-radius:  50px;
             border-bottom-left-radius: 50px;
         }
     }
 }
 .preguntas-frecuentes{
-    background-color: #c4d7f88c;
-    width: 100%;
-    height: 710px;
+    background-color: nth($colores,4);
     h3{
-        color:#700ACF;
+        color:nth($colores,2);
         font-size: 35px;
         text-align: center;
         margin: 30px;
-        font-weight: 600;
-    }
-    .accordion-item{
-        h3{
-            button{
-                color:   #2d36b6;
-                font-size: 25px;
-                font-weight: 500;
-            }
-        }
+        font-weight:nth($fontweight,2);
     }
     div{
-        .accordion-body{
-            p{
-                font-size: 20px;
-                color:#5591f5;
+        width: 100%;
+        @extend %flexcenter;
+        flex-direction: column;
+        .accordion-item{
+            h3{
+                button{
+                    color: nth($colores,9);
+                    font-size: 25px;
+                    font-weight: nth($fontweight,4);
+                }
+            }
+            div{
+                .accordion-body{
+                    p{
+                        font-size: 24px;
+                        color:nth($colores,8);
+                    }
+                }
             }
         }
     }
 }
 .contactanos{
     h1{
-        color: #700ACF;
+        color: nth($colores,2);
         font-size: 40px;
         padding: 20px;
         text-align: center;
-        font-weight: 700;
+        font-weight: nth($fontweight,3);
     }
     div{
-        border-top: 2px solid #700ACF;
+        border-top: 2px solid nth($colores,2);
         height: 2px;
         max-width: 400px;
         padding-bottom: 9px;
@@ -357,51 +375,46 @@ main{
     }
 }
 .ubicacion-contenedor{
-    display: flex;
-    justify-content: center;
+    @extend %flexcenter;
     width: 100%;
     height: 300px;
-    align-items: center;
     .ubicacion{
         width: 300px;
         height: 100px;
         text-align: center;
-        align-items: center;
         border-radius: 5px;
         margin: 20px;
-        box-shadow:3px 3px 4px rgb(147, 147, 212);
+        box-shadow:3px 3px 4px nth($colores,3);
         img{
             width: 40px;
             height: 40px;
             margin: 10px;
         }
         p{
-            color: #5591f5;
+            color: nth($colores,8);
             font-size: 23px;
-            font-weight: 500;
+            font-weight: nth($fontweight,4);
         }
     }
 }
 .formulario{
-    background-color: #c4d7f88c;
+    background-color:nth($colores,4);
     form{
         .formulario-contenedor{
             .formulario-card{
-                display: flex;
-                justify-content: center;
+                @extend %flexcenter;
                 div{
                     .form-label{
-                        font-weight: 700;
+                        font-weight:nth($fontweight,3);
                         font-size: 23px;
-                        color:#8338ec; 
+                        color:nth($colores,2); 
                     }
                 }
             }
         }
         .botones-formulario{
             margin: 7px;
-            display: flex;
-            justify-content: center;
+            @extend %flexcenter;
             input{
                 margin: 5px;
             }
@@ -409,22 +422,20 @@ main{
     }
 }
 .mapa-frase{
-    display: flex;
-    justify-content: space-around;
+    @include flex (flex, space-around);
     align-items: center;
     iframe{
         border-radius: 5px;
         margin: 20px;
-        box-shadow:3px 3px 4px rgb(147, 147, 212);
+        box-shadow:3px 3px 4px nth($colores,3);
     }
     .frase-flor-loto{
-        display: flex;
+        @extend %flexcenter;
         flex-direction: column;
-        align-items: center;
         p{
-            color: #5591f5;
-            font-size: 40px;
-            font-weight: 400;
+            color: nth($colores,8);
+            font-size: 35px;
+            font-weight: nth($fontweight,5);
             text-align: center;
             font-style: italic;
         }

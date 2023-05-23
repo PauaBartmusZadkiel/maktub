@@ -1,34 +1,31 @@
 footer{
-    background-color:#700ACF;
-    border-top: 4px solid #fde0f7;
+    background-color:nth($colores,2);
+    border-top: 4px solid nth($colores,6);
     opacity: 0.7;
-    display: flex;
-    justify-content: space-around;
+    @include flex (flex, space-around);
     .contacto-contenedor{
-        display: flex;
+        @extend %flexcenter;
         flex-direction:column;
         h4{
-        color: white;
+        color: nth($colores,7);
         font-weight: 900px;
         font-size: 23px;
         text-align: center;
         }
         .contenedor{
-            display: flex;
-            align-items: center;
+            @extend %flexcenter;
             .contacto{
-                display: flex;
+                @extend %flexcenter;
                 flex-direction: row;
                 width: 300px;
                 height: 75px;
-                align-items: center;
                 img{
                     width: 50px;
                     height: 50px;
                     margin: 15px;
                 }
                 p{
-                    color: white;
+                    color: nth($colores,7);
                     font-size: 19px;
                 }
             }

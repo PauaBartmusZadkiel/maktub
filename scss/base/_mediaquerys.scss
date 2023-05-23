@@ -1,0 +1,396 @@
+/*---MQ-INDEX--*/
+@media screen and (max-width:937px) {
+    header {
+        nav {
+            .contenedor-barra {
+                flex-direction: column;
+
+                div {
+                    ul {
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .hero {
+            flex-direction: column;
+
+            img {
+                width: 410px;
+                height: 410px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 811px) {
+    main {
+        .pilares-de-trabajo {
+            h1 {
+                font-size: 32px;
+            }
+
+            .pilares-de-trabajo-contenedor {
+                flex-direction: column;
+                align-items: center;
+                .pilares-de-trabajo-card {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    footer {
+        .contacto-contenedor {
+            .contenedor {
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and (max-width: 701px) {
+    header {
+        nav {
+            .contenedor-barra {
+                display: flex;
+                div {
+                    ul {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .hero{
+            img{
+                width: 380px;
+                height: 380px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .pilares-de-trabajo{
+            .pilares-de-trabajo-contenedor{
+                .pilares-de-trabajo-card{
+                    img{
+                        height: 280px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+        .caballero{
+            .linea-aprendizaje{
+                max-width: 400px;
+            }
+            .caballero-armadura-oxidada{
+                p{
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+            .video-caballero{
+                iframe{
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 551px) {
+    main{
+        .pilares-de-trabajo{
+            .pilares-de-trabajo-contenedor{
+                .pilares-de-trabajo-card{
+                    width: 300px;
+                    height: 400px;
+                    img{
+                        width: 200px;
+                        height: 210px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*---MQ-QUE-HACEMOS--*/
+@media screen and (max-width:985px){
+    header {
+        nav {
+            .contenedor-barra {
+                flex-direction: column;
+
+                div {
+                    ul {
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+    }
+    .que-hacemos-sesiones{
+        div{
+            h1{
+                font-size: 38px;
+            }
+            p{
+                font-size: 30px; 
+            }
+        }
+    }
+    .que-hacemos{
+        div{
+        width: 210px;
+        height: 300px;
+        margin: 15px;
+        padding: 15px;
+            img{
+                width: 100%;
+                height: 150px;
+            }
+            p{
+                font-size: 19px;
+            }
+        }
+    }
+    .principito-frase{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:827px){
+    footer {
+        .contacto-contenedor {
+            .contenedor {
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and (max-width:581px){
+    header {
+        nav {
+            .contenedor-barra {
+                display: flex;
+                div {
+                    ul {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .que-hacemos-sesiones{
+            div{
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 23px;
+                }
+            }
+        }
+        .que-hacemos{
+            flex-direction: column;
+            align-items: center;
+            div{
+                height: 300px;
+                p{
+                    color: #1453c0;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        .principito-frase{
+            font-size: 20px;
+        }
+    }
+}
+/*---MQ-QUIENES-SOMOS--*/
+@media screen and (max-width:865px){
+    .quienes-somos{
+        .quienes-somos-contenido{
+            text-align: center;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+    .mision{
+        font-size: 25px;
+    }
+    .valores{
+        h2{
+            font-size: 30px;
+        }
+        div{
+            max-width: 300px;
+        }
+    }
+    footer {
+        .contacto-contenedor {
+            .contenedor {
+                flex-direction: column;
+            }
+        }
+    } 
+}
+@media screen and (max-width:713px){
+    .quienes-somos{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 260px;
+            height: 300px;
+        }
+    }
+    .grid-galeria{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:531px){
+    .grid-galeria{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        margin-left: 50px;
+        .grid-item{
+            img{
+                width: 80%;
+            }
+            p{
+                width: 80%;
+            }
+        }
+    }
+}
+/*---MQ-SESIONES--*/
+@media screen and (max-width:865px){
+    .sesiones{
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 580px;
+            height: 500px;
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    .preguntas-frecuentes{
+        background-color: #c4d7f88c;
+        h3{
+            font-size: 28px;
+        }
+        div{
+            .accordion-item{
+                h3{
+                    button{
+                        font-size: 20px;
+                    }
+                }
+                div{
+                    .accordion-body{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:635px){
+    header {
+        nav {
+            .contenedor-barra {
+                display: flex;
+                div {
+                    ul {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .sesiones{
+        div{
+            width: 520px;
+            height: 520px;
+        }
+    }
+}
+/*---MQ-CONTACTO--*/
+@media screen and (max-width:863px){
+    .contactanos{
+        h1{
+            font-size: 32px;
+        }
+    }
+    .ubicacion-contenedor{
+        flex-direction: column;
+        height: 500px;
+    }
+    .formulario{
+        form{
+            .formulario-contenedor{
+                .formulario-card{
+                    div{
+                        .form-label{
+                            font-size: 20px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mapa-frase{
+        flex-direction: column;
+        .frase-flor-loto{
+            p{
+                font-size: 29px;
+            }
+        }
+    }
+}
+@media screen and (max-width:653px){
+    header {
+        nav {
+            .contenedor-barra {
+                display: flex;
+                div {
+                    ul {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .contactanos{
+        h1{
+            font-size: 30px;
+        }
+        div{
+            max-width: 300px;
+        }
+    }
+}
+
+
+

@@ -4,16 +4,15 @@ header{
     width: 100%;
     z-index: 3;
     nav{
-        background-color:#ffffff;
+        background-color: nth($colores,7);
         opacity: 0.9;
-        border-bottom: 2px solid #700ACF;
+        border-bottom: 2px solid nth($colores,2);
         .contenedor-barra{
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            @include flex (flex, space-between);
             align-items: center;
             .maktub{
-                color:#700ACF;
+                color:nth($colores,2);
                 text-decoration: none;
                 font-size: 40px;
                 font-style: italic;
@@ -24,13 +23,15 @@ header{
                 ul{
                     li{
                         .titulo-pagina{
-                            color:#700ACF;
+                            color:nth($colores,2);
                             text-decoration: none;
                             font-size: 22px;
                             margin: 20px;
                             font-weight: 500;
+                            transition: 1s;
                             &:hover{
-                                color: rgb(194, 76, 248);  
+                                color: nth($colores,3); 
+                                transform: scale(1.1); 
                             }
                         }
                     }
