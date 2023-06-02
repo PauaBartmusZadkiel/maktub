@@ -20,26 +20,26 @@ header {
     background-color: white;
     opacity: 0.9;
     border-bottom: 2px solid #700ACF; }
-    header nav .contenedor-barra {
+    header nav div {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      header nav .contenedor-barra .maktub {
+      header nav div .maktub {
         color: #700ACF;
         text-decoration: none;
         font-size: 40px;
         font-style: italic;
         font-weight: 700;
         margin-left: 25px; }
-      header nav .contenedor-barra div ul li .titulo-pagina {
+      header nav div div ul li .titulo-pagina {
         color: #700ACF;
         text-decoration: none;
         font-size: 22px;
         margin: 20px;
         font-weight: 500;
         transition: 1s; }
-        header nav .contenedor-barra div ul li .titulo-pagina:hover {
+        header nav div div ul li .titulo-pagina:hover {
           color: rgba(201, 100, 248, 0.349);
           transform: scale(1.1); }
 
@@ -604,10 +604,13 @@ footer {
 @media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 531px) {
   .grid-galeria {
     grid-template-columns: repeat(1, 1fr); }
-    .grid-galeria .grid-item img {
-      width: 80%; }
-    .grid-galeria .grid-item p {
-      width: 80%; } }
+    .grid-galeria .grid-item {
+      display: flex;
+      justify-content: center; }
+      .grid-galeria .grid-item img {
+        width: 80%; }
+      .grid-galeria .grid-item p {
+        width: 80%; } }
 
 @media screen and (max-width: 811px) and (max-width: 865px) {
   /*---MQ-SESIONES--*/ }

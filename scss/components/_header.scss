@@ -7,8 +7,8 @@ header{
         background-color: nth($colores,7);
         opacity: 0.9;
         border-bottom: 2px solid nth($colores,2);
-        .contenedor-barra{
-            width: 100%;
+        div{
+            width: 100%; 
             @include flex (flex, space-between);
             align-items: center;
             .maktub{
