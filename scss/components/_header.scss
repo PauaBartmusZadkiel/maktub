@@ -1,16 +1,14 @@
 header{
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 3;
     nav{
         background-color: nth($colores,7);
         opacity: 0.9;
         border-bottom: 2px solid nth($colores,2);
-        div{
-            width: 100%; 
-            @include flex (flex, space-between);
-            align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
             .maktub{
                 color:nth($colores,2);
                 text-decoration: none;
@@ -37,6 +35,5 @@ header{
                     }
                 }
             }
-        }
     }
 }

@@ -127,8 +127,8 @@ main{
         margin-bottom:30px;
         animation-name: slidein ;
         animation-duration: 3s;
-        animation-iteration-count: initial;
-        animation-timing-function: ease-in-out;
+        animation-iteration-count:unset;
+        animation-timing-function: unset;
         animation-delay: 1s;
         @keyframes slidein {
             from{
@@ -303,16 +303,14 @@ main{
 .sesiones{
     @include flex (flex, space-around);
     div{
-        width: 450px;
-        height: 730px;
+        width: 40%;
+        height: 600px;
         margin: 20px;
         padding: 20px;
         text-align: center;
-        border: 3px solid;
-        border-radius: 4px;
-        color: nth($colores,2);
-        border-top-right-radius:  50px;
-        border-bottom-left-radius: 50px;
+        box-shadow: 10px 10px 23px -11px nth($colores,1);
+            -webkit-box-shadow: 10px 10px 23px -11px nth($colores,1);
+            -moz-box-shadow: 10px 10px 23px -11px nth($colores,1);
         img{
             width: 200px;
             height: 200px;
@@ -327,7 +325,7 @@ main{
             font-size: 25px;
             color:nth($colores,9);
             padding:20px;
-            text-align: justify;
+            text-align: center;
             border-top-right-radius:  50px;
             border-bottom-left-radius: 50px;
         }
@@ -348,11 +346,18 @@ main{
         align-items: center;;
         flex-direction: column;
         .accordion-item{
+            align-items: start;
             h3{
+                width: 95%;
                 button{
                     color: nth($colores,9);
                     font-size: 25px;
                     font-weight: nth($fontweight,4);
+                    align-items: end;
+                    &:hover{
+                        background-color:nth($colores,5) ;
+                        color:nth($colores,7) ;
+                    }
                 }
             }
             div{
@@ -388,7 +393,7 @@ main{
     width: 100%;
     height: 300px;
     .ubicacion{
-        width: 300px;
+        width: 380px;
         height: 100px;
         text-align: center;
         border-radius: 5px;

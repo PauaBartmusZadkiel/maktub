@@ -14,34 +14,31 @@ section h3 {
 header {
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 3; }
   header nav {
     background-color: white;
     opacity: 0.9;
-    border-bottom: 2px solid #700ACF; }
-    header nav div {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      header nav div .maktub {
-        color: #700ACF;
-        text-decoration: none;
-        font-size: 40px;
-        font-style: italic;
-        font-weight: 700;
-        margin-left: 25px; }
-      header nav div div ul li .titulo-pagina {
-        color: #700ACF;
-        text-decoration: none;
-        font-size: 22px;
-        margin: 20px;
-        font-weight: 500;
-        transition: 1s; }
-        header nav div div ul li .titulo-pagina:hover {
-          color: rgba(201, 100, 248, 0.349);
-          transform: scale(1.1); }
+    border-bottom: 2px solid #700ACF;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    header nav .maktub {
+      color: #700ACF;
+      text-decoration: none;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 700;
+      margin-left: 25px; }
+    header nav div ul li .titulo-pagina {
+      color: #700ACF;
+      text-decoration: none;
+      font-size: 22px;
+      margin: 20px;
+      font-weight: 500;
+      transition: 1s; }
+      header nav div ul li .titulo-pagina:hover {
+        color: rgba(201, 100, 248, 0.349);
+        transform: scale(1.1); }
 
 main {
   margin-top: 0; }
@@ -155,8 +152,8 @@ main {
   margin-bottom: 30px;
   animation-name: slidein;
   animation-duration: 3s;
-  animation-iteration-count: initial;
-  animation-timing-function: ease-in-out;
+  animation-iteration-count: unset;
+  animation-timing-function: unset;
   animation-delay: 1s; }
 
 @keyframes slidein {
@@ -317,16 +314,14 @@ main {
   display: flex;
   justify-content: space-around; }
   .sesiones div {
-    width: 450px;
-    height: 730px;
+    width: 40%;
+    height: 600px;
     margin: 20px;
     padding: 20px;
     text-align: center;
-    border: 3px solid;
-    border-radius: 4px;
-    color: #700ACF;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px; }
+    box-shadow: 10px 10px 23px -11px rgba(0, 0, 0, 0.582);
+    -webkit-box-shadow: 10px 10px 23px -11px rgba(0, 0, 0, 0.582);
+    -moz-box-shadow: 10px 10px 23px -11px rgba(0, 0, 0, 0.582); }
     .sesiones div img {
       width: 200px;
       height: 200px; }
@@ -339,7 +334,7 @@ main {
       font-size: 25px;
       color: #1453c0;
       padding: 20px;
-      text-align: justify;
+      text-align: center;
       border-top-right-radius: 50px;
       border-bottom-left-radius: 50px; }
 
@@ -357,13 +352,21 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .preguntas-frecuentes div .accordion-item h3 button {
-      color: #1453c0;
-      font-size: 25px;
-      font-weight: 500; }
-    .preguntas-frecuentes div .accordion-item div .accordion-body p {
-      font-size: 24px;
-      color: #4585f5; }
+    .preguntas-frecuentes div .accordion-item {
+      align-items: start; }
+      .preguntas-frecuentes div .accordion-item h3 {
+        width: 95%; }
+        .preguntas-frecuentes div .accordion-item h3 button {
+          color: #1453c0;
+          font-size: 25px;
+          font-weight: 500;
+          align-items: end; }
+          .preguntas-frecuentes div .accordion-item h3 button:hover {
+            background-color: #8338ec;
+            color: white; }
+      .preguntas-frecuentes div .accordion-item div .accordion-body p {
+        font-size: 24px;
+        color: #4585f5; }
 
 .contactanos h1 {
   color: #700ACF;
@@ -386,7 +389,7 @@ main {
   width: 100%;
   height: 300px; }
   .ubicacion-contenedor .ubicacion {
-    width: 300px;
+    width: 380px;
     height: 100px;
     text-align: center;
     border-radius: 5px;
@@ -469,7 +472,6 @@ footer {
         color: white;
         font-size: 19px; }
 
-/*---MQ-INDEX--*/
 @media screen and (max-width: 937px) {
   header nav .contenedor-barra {
     flex-direction: column; }
@@ -494,7 +496,7 @@ footer {
   footer .contacto-contenedor .contenedor {
     flex-direction: column; } }
 
-@media screen and (max-width: 811px) and (max-width: 701px) {
+@media screen and (max-width: 701px) {
   header nav .contenedor-barra {
     display: flex; }
     header nav .contenedor-barra div ul {
@@ -515,7 +517,7 @@ footer {
   main .caballero .video-caballero iframe {
     height: 400px; } }
 
-@media screen and (max-width: 811px) and (max-width: 551px) {
+@media screen and (max-width: 551px) {
   main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card {
     width: 300px;
     height: 400px; }
@@ -524,10 +526,39 @@ footer {
       height: 210px;
       padding: 10px; } }
 
-@media screen and (max-width: 811px) {
-  /*---MQ-QUE-HACEMOS--*/ }
+@media screen and (max-width: 333px) {
+  main .hero img {
+    width: 290px;
+    height: 290px; }
+  main .hero p {
+    font-size: 20px; }
+  main .pilares-de-trabajo h1 {
+    font-size: 28px; }
+  main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card {
+    width: 270px;
+    height: 370px; }
+    main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card img {
+      width: 180px;
+      height: 200px;
+      padding: 7px; }
+    main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card h2 {
+      font-size: 21px; }
+    main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card .linea {
+      max-width: 170px; }
+    main .pilares-de-trabajo .pilares-de-trabajo-contenedor .pilares-de-trabajo-card p {
+      font-size: 17px; }
+  main .caballero h3 {
+    font-size: 29px;
+    margin: 27px; }
+  main .caballero .linea-aprendizaje {
+    max-width: 200px; }
+  main .caballero .caballero-armadura-oxidada p {
+    font-size: 20px; }
+  main .caballero .caballero-armadura-oxidada img {
+    width: 70px;
+    height: 70px; } }
 
-@media screen and (max-width: 811px) and (max-width: 985px) {
+@media screen and (max-width: 985px) {
   header nav .contenedor-barra {
     flex-direction: column; }
     header nav .contenedor-barra div ul {
@@ -549,11 +580,11 @@ footer {
   .principito-frase {
     font-size: 25px; } }
 
-@media screen and (max-width: 811px) and (max-width: 827px) {
+@media screen and (max-width: 827px) {
   footer .contacto-contenedor .contenedor {
     flex-direction: column; } }
 
-@media screen and (max-width: 811px) and (max-width: 581px) {
+@media screen and (max-width: 581px) {
   header nav .contenedor-barra {
     display: flex; }
     header nav .contenedor-barra div ul {
@@ -574,10 +605,19 @@ footer {
   main .principito-frase {
     font-size: 20px; } }
 
-@media screen and (max-width: 811px) {
-  /*---MQ-QUIENES-SOMOS--*/ }
+@media screen and (max-width: 317px) {
+  main .que-hacemos-sesiones {
+    height: 280px; }
+    main .que-hacemos-sesiones div h1 {
+      font-size: 28px; }
+    main .que-hacemos-sesiones div .linea-hacemos-sesiones {
+      max-width: 200px; }
+    main .que-hacemos-sesiones div p {
+      font-size: 20px; }
+  main .principito-frase {
+    font-size: 20px; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) {
+@media screen and (max-width: 865px) {
   .quienes-somos .quienes-somos-contenido {
     text-align: center; }
     .quienes-somos .quienes-somos-contenido h1 {
@@ -591,7 +631,7 @@ footer {
   .valores div {
     max-width: 300px; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 713px) {
+@media screen and (max-width: 713px) {
   .quienes-somos {
     flex-direction: column;
     align-items: center; }
@@ -601,7 +641,7 @@ footer {
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 531px) {
+@media screen and (max-width: 531px) {
   .grid-galeria {
     grid-template-columns: repeat(1, 1fr); }
     .grid-galeria .grid-item {
@@ -612,47 +652,57 @@ footer {
       .grid-galeria .grid-item p {
         width: 80%; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) {
-  /*---MQ-SESIONES--*/ }
-
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 865px) {
-  .sesiones {
+@media screen and (max-width: 907px) {
+  main .sesiones {
     flex-direction: column;
     align-items: center; }
-    .sesiones div {
-      width: 580px;
-      height: 500px; }
-      .sesiones div h2 {
-        font-size: 25px; }
-      .sesiones div p {
-        font-size: 20px; }
-  .preguntas-frecuentes {
-    background-color: #c4d7f88c; }
-    .preguntas-frecuentes h3 {
-      font-size: 28px; }
-    .preguntas-frecuentes div .accordion-item h3 button {
-      font-size: 20px; }
-    .preguntas-frecuentes div .accordion-item div .accordion-body p {
-      font-size: 20px; } }
+    main .sesiones div {
+      width: 85%; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 635px) {
-  header nav .contenedor-barra {
-    display: flex; }
-    header nav .contenedor-barra div ul {
-      flex-direction: column; }
-  .sesiones div {
-    width: 520px;
-    height: 520px; } }
+@media screen and (max-width: 809px) {
+  main .sesiones div h2 {
+    font-size: 29px; }
+  main .sesiones div p {
+    font-size: 23px; }
+  main .preguntas-frecuentes h3 {
+    font-size: 30px; }
+  main .preguntas-frecuentes div .accordion-item h3 button {
+    font-size: 20px; }
+  main .preguntas-frecuentes div .accordion-item div .accordion-body p {
+    font-size: 20px; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 447px) {
-  .sesiones div {
-    width: 400px;
-    height: 600px; } }
+@media screen and (max-width: 579px) {
+  main .sesiones div h2 {
+    font-size: 27px; }
+  main .sesiones div p {
+    font-size: 20px; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) {
-  /*---MQ-CONTACTO--*/ }
+@media screen and (max-width: 357px) {
+  main .que-hacemos-sesiones div h1 {
+    font-size: 28px; }
+  main .que-hacemos-sesiones div .linea-hacemos-sesiones {
+    max-width: 200px; }
+  main .que-hacemos-sesiones div p {
+    font-size: 20px; }
+  main .sesiones div {
+    height: 30%; }
+    main .sesiones div img {
+      width: 130px;
+      height: 130px; }
+    main .sesiones div h2 {
+      font-size: 23px;
+      padding: 10px; }
+    main .sesiones div p {
+      font-size: 16px;
+      text-align: center; }
+  main .preguntas-frecuentes h3 {
+    font-size: 25px; }
+  main .preguntas-frecuentes div .accordion-item h3 button {
+    font-size: 18px; }
+  main .preguntas-frecuentes div .accordion-item div .accordion-body p {
+    font-size: 15px; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 863px) {
+@media screen and (max-width: 863px) {
   .contactanos h1 {
     font-size: 32px; }
   .ubicacion-contenedor {
@@ -665,7 +715,7 @@ footer {
     .mapa-frase .frase-flor-loto p {
       font-size: 29px; } }
 
-@media screen and (max-width: 811px) and (max-width: 865px) and (max-width: 653px) {
+@media screen and (max-width: 653px) {
   header nav .contenedor-barra {
     display: flex; }
     header nav .contenedor-barra div ul {
