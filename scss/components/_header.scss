@@ -7,8 +7,6 @@ header{
         opacity: 0.9;
         border-bottom: 2px solid nth($colores,2);
         width: 100%;
-        display: flex;
-        justify-content: space-between;
             .maktub{
                 color:nth($colores,2);
                 text-decoration: none;
@@ -35,5 +33,5 @@ header{
                     }
                 }
             }
+        }
     }
-}
