@@ -1,30 +1,35 @@
-footer{
-    background-color:nth($colores,2);
-    border-top: 4px solid nth($colores,6);
+footer {
+    background-color: nth($colores, 2);
+    border-top: 4px solid nth($colores, 6);
     opacity: 0.7;
     @include flex (flex, space-around);
-    .contacto-contenedor{
-        h4{
-        color: nth($colores,7);
-        font-weight: 900px;
-        font-size: 23px;
-        text-align: center;
+
+    .contacto-contenedor {
+        h4 {
+            color: nth($colores, 7);
+            font-weight: 900px;
+            font-size: 23px;
+            text-align: center;
         }
-        .contenedor{
+
+        .contenedor {
             display: flex;
-            .contacto{
+
+            .contacto {
                 align-items: center;
                 display: flex;
                 flex-direction: row;
                 width: 300px;
                 height: 75px;
-                img{
+
+                img {
                     width: 50px;
                     height: 50px;
                     margin: 15px;
                 }
-                p{
-                    color: nth($colores,7);
+
+                p {
+                    color: nth($colores, 7);
                     font-size: 19px;
                 }
             }
